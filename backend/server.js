@@ -11,7 +11,7 @@ const app = express();
 // Middleware
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://scope-nkildp2zn-samala-sripadhs-projects.vercel.app/'
+  'https://coding-platforms.vercel.app'
 ];
 app.use(cors({
   origin: allowedOrigins,
