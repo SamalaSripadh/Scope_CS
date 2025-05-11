@@ -1,6 +1,6 @@
 # Competitive Programming Profile Tracker
 
-A web application for tracking competitive programming profiles across multiple platforms like GeeksforGeeks, CodeChef, Codeforces, LeetCode, and HackerRank.
+A web application for tracking competitive programming profiles across multiple platforms like CodeChef, Codeforces, LeetCode, and HackerRank.
 
 ## Features
 
