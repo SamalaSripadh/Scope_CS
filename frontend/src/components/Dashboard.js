@@ -39,7 +39,7 @@ const Dashboard = () => {
 
   const fetchProfiles = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/profiles', {
+      const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/profiles`, {
         headers: { 'x-auth-token': token }
       });
       
@@ -92,7 +92,7 @@ const Dashboard = () => {
 
       const response = await axios({
         method: 'post',
-        url: `http://localhost:5000/api/profiles/${platform}`,
+        url: `${process.env.REACT_APP_API_URL}/api/profiles/${platform}`,
         data: { username: username.trim() },
         headers: { 
           'x-auth-token': token,
@@ -136,7 +136,7 @@ const Dashboard = () => {
     setUpdating(true);
     try {
       const response = await axios.put(
-        'http://localhost:5000/api/profiles/update-scores',
+        `${process.env.REACT_APP_API_URL}/api/profiles/update-scores`,
         {},
         { 
           headers: { 'x-auth-token': token },

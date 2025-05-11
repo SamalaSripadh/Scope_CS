@@ -9,8 +9,12 @@ const leaderboardRoutes = require('./routes/leaderboard');
 const app = express();
 
 // Middleware
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://scope-nkildp2zn-samala-sripadhs-projects.vercel.app/'
+];
 app.use(cors({
-  origin: 'http://localhost:3000', // Allow frontend requests
+  origin: allowedOrigins,
   credentials: true
 }));
 app.use(express.json());

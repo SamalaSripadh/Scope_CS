@@ -90,7 +90,7 @@ const Leaderboard = () => {
         ...(gender !== 'All' && { gender })
       });
 
-      const res = await axios.get(`http://localhost:5000/api/leaderboard?${params}`, {
+      const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/leaderboard?${params}`, {
         headers: { 'x-auth-token': token }
       });
 
